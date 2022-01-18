@@ -1,0 +1,10 @@
+C:\Users\santhana lakshmi\Desktop\mongo-html-tutorial-master\mongo-html-tutorial-master
+
+top :- <a href="https://ibb.co/sW15DS4"><img src="https://i.ibb.co/XY5ydBP/top.jpg" alt="top" border="0"></a>
+skirts:- <a href="https://ibb.co/LNCNF7H"><img src="https://i.ibb.co/41j1qr3/skirts.jpg" alt="skirts" border="0"></a>
+neckline :- <a href="https://ibb.co/gDNLRWT"><img src="https://i.ibb.co/dQFw5p2/neckline.jpg" alt="neckline" border="0"></a>
+collar :- <a href="https://ibb.co/M2t9ZT3"><img src="https://i.ibb.co/Vjz3JyP/Collars.jpg" alt="Collars" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>image upload</a><br />
+pants:- <a href="https://ibb.co/rwsL6xF"><img src="https://i.ibb.co/YLZKkcP/pants.jpg" alt="pants" border="0"></a>
+swimmers:- <a href="https://ibb.co/pvD15C4"><img src="https://i.ibb.co/272FHXc/swimmers.jpg" alt="swimmers" border="0"></a>
+dress :- <a href="https://ibb.co/SwTKYDT"><img src="https://i.ibb.co/YB9tn49/dress.jpg" alt="dress" border="0"></a>
+waistline :- <a href="https://ibb.co/HNgRj4Y"><img src="https://i.ibb.co/xm5wNLG/waistline.jpg" alt="waistline" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload image</a><br />
