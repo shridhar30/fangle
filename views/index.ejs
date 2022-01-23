@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../public/js/jquery.min.js"></script>
      <title>Fangle Upcyclestore</title>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -18,7 +19,7 @@
      <link rel="stylesheet" href="css/tooplate-gymso-style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50" style="font-family: 'Playfair Display', serif;">
+<body class="stop-scrolling" data-spy="scroll" data-target="#navbarNav" data-offset="50" style="font-family: 'Playfair Display', serif;">
     <!-- MENU BAR -->
     <nav class="navbar back navbar-expand-lg fixed-top ">
         <div class="container">
@@ -33,18 +34,18 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item">
-                        <a href="#home"  class="nav-link smoothScroll">Home</a>
+                        <a href="#home"  class="nav-link smoothScroll">Size </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="sell-your-cloth" class="nav-link smoothScroll">sell your cloths</a>
+                        <a href="sell-your-cloth" class="nav-link smoothScroll">Design (6)</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                        <a href="#contact" class="nav-link smoothScroll">Previous </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Us</a>
+                        <a href="#about" class="nav-link smoothScroll">Price </a>
                     </li>
                 </ul>
 
@@ -57,7 +58,6 @@
 
         </div>
     </nav>
-
 
      <!-- HERO -->
      <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
@@ -80,9 +80,9 @@
                </div>
      </section>   
        <!--classes  -->				
-     <div id="bck">
+     <div >
 
-       <section class="class section px-5 " id="step1">
+       <section class="class section px-5  " id="step1">
         <div  class="container shadow-lg p-3 mb-3 hi rounded" >
                         <div class="row text-center py-2 " >
                             <div class="col-lg-12 py-3 ">
@@ -104,7 +104,7 @@
                             </div>
                              <div class="col-lg-8 col-md-10 mx-auto col-12">
                                 <div class="hero-text mt-5 text-center">
-                                  <a   class="btn custom-btn bordered btn-lg" style="color: #ffffff;" id="next" onclick="next(this.id)" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
+                                  <a    class="btn custom-btn bordered btn-lg" style="color: #ffffff;" id="next" onclick="next(this.id)" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
                                 </div>
                            </div>
                     </div>
@@ -113,7 +113,7 @@
 
                 </script>
             </section>
-        <section class="class section px-5 " id="step2">
+        <section class="class section px-5 fadeout " id="step2">
             <div  class="container  shadow-lg py-2 mb-5 hi rounded  ">
                             <div class="row text-center py-5 " >
                                 <div class="col-lg-12 py-3 ">
@@ -128,19 +128,17 @@
                                     <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" id="XL" onclick="ttoggle(this.id)">XL</button>
                                     <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" id="XXL" onclick="ttoggle(this.id)">XXL</button>
                                     <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" id="3XL" onclick="ttoggle(this.id)">3XL</button>
-                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" id="4XL" onclick="ttoggle(this.id)">4XL</button>
-                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" id="5XL" onclick="ttoggle(this.id)">5XL</button>
                                 </div>
                                     <div class="col-lg-8 col-md-10 mx-auto col-12">
                                     <div class="hero-text mt-5 text-center">
-                                        <a href="#step1"  class="btn custom-btn bordered mt-3" id="s2prev" onclick="next(this.id)" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
-                                        <a href="#step3"  class="btn custom-btn bordered mt-3" id="s2next" onclick="nextt(this.id)" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
+                                        <a   class="btn custom-btn bordered btn-lg" id="s2prev" style="color: #ffffff;" onclick="prev1(this.id)" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
+                                        <a   class="btn custom-btn bordered btn-lg" id="s2next" style="color: #ffffff;" onclick="nextt(this.id)" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
                                     </div>
                                 </div>
                         </div>
                     </div>
             </section>
-        <section class="class section px-5" id="step3">
+        <section class="class section px-5 fadeout" id="step3">
             <div  class="container shadow-lg py-2 mb-5 hi rounded">
                             <div class="row text-center py-5" >
                                 
@@ -151,14 +149,14 @@
                                 </div>
                                 <div class="col-lg-8 col-md-10 mx-auto col-12">
                                     <div class="hero-text mt-5 text-center">
-                                        <a href="#step2"  class="btn custom-btn bordered mt-3" onclick="next(this.id)" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
-                                        <a href="#step4"  class="btn custom-btn bordered mt-3" onclick="dynamic1(this.id)" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
+                                        <a   class="btn custom-btn bordered mt-3" onclick="prev2(this.id)" style="color: #ffffff;"  data-aos="fade-up" data-aos-delay="700">Previous step</a> 
+                                        <a   class="btn custom-btn bordered mt-3" onclick="dynamic1(this.id)" style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
                             </div>
                                 </div>
                         </div>
                     </div>
                 </section>
-        <section class="class section px-5" id="step4">
+        <section class="class section px-5 fadeout" id="step4">
             <div  class="container shadow-lg py-2 mb-5  rounded hi">
                             <div class="row text-center py-5" >
                                 <div class="col-lg-12 py-3 ">
@@ -170,7 +168,9 @@
 
                                 <div class="col-lg-8 col-md-10 mx-auto col-12">
                                 <div class="hero-text mt-5 text-center" >
-                                    <a  onclick="dynamic2(this.id)"  class="btn custom-btn bordered mt-3 fa fa-whatsapp " style="color: #09a509; " id="next1" data-aos="fade-up" data-aos-delay="700">     Send</a> 
+                                    <a   class="btn custom-btn bordered mt-3" onclick="prev3(this.id)" style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
+                                    <a   class="btn custom-btn bordered mt-3" onclick="dynamic3(this.id)" style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
+
                                     <!-- <a onclick="dynamic1(this.id)" id="next1" style="font-size: 3vh;" data-aos="fade-up" data-aos-delay="700">Get Prize</a>  -->
                                 </div>
                             </div>
@@ -178,139 +178,67 @@
                                 
                         </div>
             </section>
-                            <!-- <section class="class section" id="step2">
-                                <div  class="container shadow-lg p-3 mb-5 bg-white rounded">
-                                                <div class="row text-center p-5" >
-                                                    <div class="col-lg-12 p-3 ">
-                                                        <h2 data-aos="fade-up" data-aos-delay="200" >Select your Apparel size</h2>
-                                                    </div>
-                                                    <div class='col-lg-12 align-items-center' id="more2"  data-aos="fade-up" data-aos-delay="400">
-                                                        
-                                                    </div>
-                                                     <div class="col-lg-8 col-md-10 mx-auto col-12">
-                                                        <div class="hero-text mt-5 text-center">
-                                                            <a href="#step1"  class="btn custom-btn bordered mt-3" onclick="next(this.id)" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
-                                                          <a href="#step3"  class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
-                                                        </div>
-                                                   </div>
-                                            </div>
-                                        </div>
-                                    </section> -->
-                    <!-- <section> -->
-                        <!-- <div class="container shadow-lg p-3 mb-5 sm-p-5 hi rounded col-md-4">
-                            <div class="row">
-                                <div class="col-md">
-                                    <a  href="https://ibb.co/kBnXySB"><img src="https://i.ibb.co/RbncSDb/swimdress.jpg" alt="swimdress" style="height: 80vh; "></a>
-
+        <section class="class section px-5 fadeout " id="step5">
+            <div  class="container  shadow-lg py-2 mb-5 hi rounded  ">
+                            <div class="row text-center py-5 " >
+                                <div class="col-lg-12 py-3 ">
+                                    <h1 data-aos="fade-up" data-aos-delay="200" style="font-family: 'Playfair Display', serif; word-spacing:1rem;" >Required  Apparel size</h1>
                                 </div>
-                                <div class="p-3">
-                                    <label for="cars"><h3>Choose a car:</h3></label>
-
-                                    <select name="cars" id="cars">
-                                      <option value="volvo">sweetheart</option>
-                                      <option value="saab">fauxkini</option>
-                                      <option value="mercedes">ruffled</option>
-                                      <option value="audi">flounce top</option>
-                                      <option value="audi">one shoulder</option>
-                                      <option value="audi">blousson</option>
-                                      <option value="audi">criss-cross</option>
-                                      <option value="audi">vintage</option>
-                                      <option value="audi">keyhole</option>
-                                      <option value="audi">halter</option>
-                                      <option value="audi">halter</option>
-                                    </select>
+                                <div class='col-lg-12 align-items-center' id="01"  data-aos="fade-up" data-aos-delay="400">
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif; " value="Free" onclick="tttttoggle(this)">Free</button>
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" value="XS" onclick="tttttoggle(this)">XS</button>
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" value="S" onclick="tttttoggle(this)">S</button>
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" value="M" onclick="tttttoggle(this)">M</button>
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" value="L" onclick="tttttoggle(this)">L</button>
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" value="XL" onclick="tttttoggle(this)">XL</button>
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" value="XXL" onclick="tttttoggle(this)">XXL</button>
+                                    <button class="column ui toggle button m-2" style="font-family: 'Playfair Display', serif;" value="3XL" onclick="tttttoggle(this)">3XL</button>
                                 </div>
-                            </div>
+                                    <div class="col-lg-8 col-md-10 mx-auto col-12">
+                                    <div class="hero-text mt-5 text-center">
+                                        <a  onclick="prev4(this.id)" class="btn custom-btn bordered mt-3" id="s2prev"  style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
+                                        <a  onclick="dynamic2(this.id)"  class="btn custom-btn bordered mt-3 fa fa-whatsapp " style="color: #ffffff;" style="color: #09a509; " id="next1" data-aos="fade-up" data-aos-delay="700">     Send</a> 
+                                    </div>
+                                </div>
                         </div>
-                        <div class="container shadow-lg p-3 mb-5 hi rounded col-md-4">
-                            <div class="row">
-                                <div class="col-md">
-                                    <a  href="https://ibb.co/kBnXySB"><img src="https://i.ibb.co/RbncSDb/swimdress.jpg" alt="swimdress" style="height: 80vh; "></a>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="card" style="width: 30vw;" >
-                            <img src="https://i.ibb.co/RbncSDb/swimdress.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-                    </section> -->
-    </div>
-     <!-- main selection -->
-
-
-    <!-- ABOUT -->
-
-
-      <article class="wrapper" id="about">
+                    </div>
+            </section>
+        <section class="contact section fadeout" id="contact">
             <div class="container">
-                 <div class="row">
+                <div class="row">
 
-                         <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
-                             <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are FANGLE</h2>
+                        <div class="ml-auto col-lg-5 col-md-6 col-12">
+                            <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
 
-                             <p data-aos="fade-up" data-aos-delay="400" >You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
+                            <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                                <input type="text" class="form-control" name="cf-name" placeholder="Name">
 
-                             <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
+                                <input type="email" class="form-control" name="cf-email" placeholder="Email">
 
-                         </div>
-                 </div>
-            </div>
-        </article>
-  <section>
-      <div class="container">
-  </section>
-<!-- pop-up -->
-     <!-- <button type="button" id="fixedpop" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Size Chart</button>
+                                <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
 
-     <div id="myModal" class="modal fade"  tabindex="-1" role="dialog">
-       <div class="modal-dialog" >
-         <div class="modal-content">
-             <div class="modal-body">
-                 <img src="//placehold.it/1000x600" class="img-responsive">
-             </div>
-         </div>
-       </div>
-     </div> -->
-     <!-- CONTACT -->
-     <section class="contact section" id="contact">
-          <div class="container">
-               <div class="row">
-
-                    <div class="ml-auto col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
-
-                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
-                            <input type="text" class="form-control" name="cf-name" placeholder="Name">
-
-                            <input type="email" class="form-control" name="cf-email" placeholder="Email">
-
-                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
-
-                            <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
-                        </form>
-                    </div>
-
-                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
-
-                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> MAPS</p>
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
-                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31123.070693398935!2d79.67714897144361!3d12.818455221205154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c2f7e0c7f12d%3A0xde5f8682b1cb2a4d!2sVedachalam%20Nagar%20Extension%2C%20Kanchipuram%2C%20Tamil%20Nadu%20631502!5e0!3m2!1sen!2sin!4v1641492408492!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
+                            </form>
                         </div>
-                    </div>
-                    
-               </div>
-          </div>
-     </section>
+
+                        <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
+
+                            <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> MAPS</p>
+    <!-- How to change your own map point
+        1. Go to Google Maps
+        2. Click on your location point
+        3. Click "Share" and choose "Embed map" tab
+        4. Copy only URL and paste it within the src="" field below
+    -->
+                            <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31123.070693398935!2d79.67714897144361!3d12.818455221205154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c2f7e0c7f12d%3A0xde5f8682b1cb2a4d!2sVedachalam%20Nagar%20Extension%2C%20Kanchipuram%2C%20Tamil%20Nadu%20631502!5e0!3m2!1sen!2sin!4v1641492408492!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </section>
 
 
      <!-- FOOTER -->
@@ -319,7 +247,7 @@
                <div class="row">
 
                     <div class="ml-auto col-lg-4 col-md-5">
-                        <h5>Website by : <a href="mailto:shridhardevaraj@gmail.com">Shridhar</a></h5>
+                        <h5>Website by : <a href="mailto:shridhardevaraj@gmail.com" style="font-size: 1.5rem;">Mr. Shridhar Devaraj</a></h5>
                         <!-- <p class="copyright-text">shridhar
                         
                         <br>Design: <a href="shridhardevaraj@gmail.com">shridhardevarj</a></p> -->
@@ -369,8 +297,8 @@
       </div>
     </div>
      <!-- SCRIPTS -->
-     <script src="js/bootstrap.min.js"></script>
      <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
      <script src="js/aos.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
@@ -383,12 +311,14 @@
             var input = 0
             var s2 = 's'
             var s3 = 's'
+            var s4 = 's'
 
             // answers
             var answers1 = 'a'
             var answers2 = 'a'
             var answers3 = 'a'
             var answers4 = 'a'
+            var answers5 = 'a'
            
             function gotowhatsapp() {
                 var url = "https://wa.me/919442829974?text=" 
@@ -419,10 +349,24 @@
                         var active = document.getElementsByClassName('ui toggle button active').length
                         button.classList.toggle('active')
                     }
+            function tttttoggle(a){
+                        console.log(a)
+                        answers5 = a.value
+                        var active = document.getElementsByClassName('column ui toggle button m-2 active').length
+                        var activee = document.getElementsByClassName('column ui toggle button m-2 active')
+                        console.log(activee)
+                        if (active != 0) {
+                            activee[0].classList.toggle('active')
+                        } else {
+                            a.classList.toggle('active')   
+                     
+                        }
+                        console.log(answers5)
+                    }
             function tttoggle(a){
                 console.log(a)
                         var button = document.getElementById(a)
-                        s2 = a
+                        s2 = a-10
             
                         var activee = document.getElementsByClassName('ui toggle button a active ')
                         var active = document.getElementsByClassName('ui toggle button a active').length
@@ -450,15 +394,22 @@
                      
                         }
                     }
+const step1 = document.getElementById('step1')
+const step2 = document.getElementById('step2')
+const step3 = document.getElementById('step3')
+const step4 = document.getElementById('step4')
+const step5 = document.getElementById('step5')
 
             function nextt(a){
                 var button = document.getElementById(a)
                         var parent = document.getElementById('01')
                         var votedchild = parent.getElementsByClassName("ui toggle button active").length
                             if (votedchild == 1){
-                                document.getElementById('step2').scrollIntoView({
+                                document.getElementById('step3').scrollIntoView({
                                     behavior:"smooth"
                                 });
+                                step3.classList.toggle('fadeout')
+                                step2.classList.toggle('fadeout')
                             }else{
                                 document.getElementById('step1').scrollIntoView({
                                     behavior:"smooth"
@@ -480,6 +431,8 @@
                                 document.getElementById('step2').scrollIntoView({
                                     behavior:"smooth"
                                 });
+                                step2.classList.toggle('fadeout')
+                                step1.classList.toggle('fadeout')
                             }else{
                                 document.getElementById('step1').scrollIntoView({
                                     behavior:"smooth"
@@ -512,11 +465,13 @@
                                 document.getElementById('step4').scrollIntoView({
                                     behavior:"smooth"
                                 });
+                                step4.classList.toggle('fadeout')
+                                step3.classList.toggle('fadeout')
+                                
                             }else{
-                                document.getElementById('step2').scrollIntoView({
+                                document.getElementById('step3').scrollIntoView({
                                     behavior:"smooth"
                                 });
-                                container.innerHTML = ""
 
                             }
                         
@@ -526,13 +481,16 @@
                             answers3 = answer.textContent
                             console.log(answers3)
                         var stage2 = test[dress][s2]
+                        var container = document.getElementById('more2');
+
+                        container.innerHTML = ""
 
                 for (var i = 0; i < stage2.length; i++) {
                     if (stage2.length == 0 ) {
-                        
+                        var container = document.getElementById('more2');
+                        container.innerHTML('Cannot make one more dress ')
                     } else {
                         var container = document.getElementById('more2');
-                        container.innerHTML = ""
                     var button = document.createElement('button');
                         button.type = 'button';
                         button.id = stage2[i];
@@ -553,11 +511,50 @@
                         console.log(answers4)
                         gotowhatsapp()
                     }else{
+
                         gotowhatsapp()
                     }
                 console.log(s3)
 
                 }
+                function prev1(){
+                    step1.classList.toggle('fadeout')
+                    step2.classList.toggle('fadeout')
+                    document.getElementById('step1').scrollIntoView({
+                                    behavior:"smooth"
+                                });
+                }
+                function prev2(){
+                    step3.classList.toggle('fadeout')
+                    step2.classList.toggle('fadeout')
+                    document.getElementById('step2').scrollIntoView({
+                                    behavior:"smooth"
+                                });
+                }
+                function prev3(){
+                    step4.classList.toggle('fadeout')
+                    step3.classList.toggle('fadeout')
+                    document.getElementById('step3').scrollIntoView({
+                                    behavior:"smooth"
+                                });
+                }
+                function prev4(){
+                    step5.classList.toggle('fadeout')
+                    step4.classList.toggle('fadeout')
+                    document.getElementById('step4').scrollIntoView({
+                                    behavior:"smooth"
+                                });
+                }
+                function dynamic3(){
+                    step4.classList.toggle('fadeout')
+                    step5.classList.toggle('fadeout')
+                    document.getElementById('step5').scrollIntoView({
+                                    behavior:"smooth"
+                                });
+                }
+                window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
                                         //     var parent = document.getElementById('s1')
                     //     var votedchild = parent.getElementsByClassName("ui toggle button active").length
                     //         if (votedchild != 0){
@@ -634,3 +631,100 @@
     </script>
 </body>
 </html>
+                            <!-- <section class="class section" id="step2">
+                                <div  class="container shadow-lg p-3 mb-5 bg-white rounded">
+                                                <div class="row text-center p-5" >
+                                                    <div class="col-lg-12 p-3 ">
+                                                        <h2 data-aos="fade-up" data-aos-delay="200" >Select your Apparel size</h2>
+                                                    </div>
+                                                    <div class='col-lg-12 align-items-center' id="more2"  data-aos="fade-up" data-aos-delay="400">
+                                                        
+                                                    </div>
+                                                     <div class="col-lg-8 col-md-10 mx-auto col-12">
+                                                        <div class="hero-text mt-5 text-center">
+                                                            <a href="#step1"  class="btn custom-btn bordered mt-3" onclick="next(this.id)" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
+                                                          <a href="#step3"  class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
+                                                        </div>
+                                                   </div>
+                                            </div>
+                                        </div>
+                                    </section> -->
+                    <!-- <section> -->
+                        <!-- <div class="container shadow-lg p-3 mb-5 sm-p-5 hi rounded col-md-4">
+                            <div class="row">
+                                <div class="col-md">
+                                    <a  href="https://ibb.co/kBnXySB"><img src="https://i.ibb.co/RbncSDb/swimdress.jpg" alt="swimdress" style="height: 80vh; "></a>
+
+                                </div>
+                                <div class="p-3">
+                                    <label for="cars"><h3>Choose a car:</h3></label>
+
+                                    <select name="cars" id="cars">
+                                      <option value="volvo">sweetheart</option>
+                                      <option value="saab">fauxkini</option>
+                                      <option value="mercedes">ruffled</option>
+                                      <option value="audi">flounce top</option>
+                                      <option value="audi">one shoulder</option>
+                                      <option value="audi">blousson</option>
+                                      <option value="audi">criss-cross</option>
+                                      <option value="audi">vintage</option>
+                                      <option value="audi">keyhole</option>
+                                      <option value="audi">halter</option>
+                                      <option value="audi">halter</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container shadow-lg p-3 mb-5 hi rounded col-md-4">
+                            <div class="row">
+                                <div class="col-md">
+                                    <a  href="https://ibb.co/kBnXySB"><img src="https://i.ibb.co/RbncSDb/swimdress.jpg" alt="swimdress" style="height: 80vh; "></a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="card" style="width: 30vw;" >
+                            <img src="https://i.ibb.co/RbncSDb/swimdress.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </section> -->
+                </div>
+                <!-- main selection -->
+           
+           
+               <!-- ABOUT -->
+           
+           
+                 <!-- <article class="wrapper" id="about">
+                       <div class="container">
+                            <div class="row">
+           
+                                    <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+                                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are FANGLE</h2>
+           
+                                        <p data-aos="fade-up" data-aos-delay="400" >You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
+           
+                                        <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
+           
+                                    </div>
+                            </div>
+                       </div>
+                   </article>
+             <section>
+                 <div class="container">
+             </section> -->
+           <!-- pop-up -->
+                <!-- <button type="button" id="fixedpop" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Size Chart</button>
+           
+                <div id="myModal" class="modal fade"  tabindex="-1" role="dialog">
+                  <div class="modal-dialog" >
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="//placehold.it/1000x600" class="img-responsive">
+                        </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- CONTACT -->
