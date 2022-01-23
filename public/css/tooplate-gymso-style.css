@@ -151,8 +151,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   .custom-btn:hover {
-    color: var(--primary-color);
-    
+    color: white;
   }
 
   .custom-btn:focus {
@@ -166,12 +165,12 @@ https://www.tooplate.com/view/2119-gymso-fitness
   .custom-btn.bg-color:focus {
     background: black;
     border-color: transparent;
-    color: var(--primary-color);
+    color: white;
   }
 
   .bordered {
     border: 1px solid var(--white-color);
-    color: var(--primary-color);
+    color: white;
   }
 
   .bg-color {
@@ -267,29 +266,13 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .navbar {
+    background: var(--dark-color);
     padding: 1rem;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-  }
-  
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    background-color: black;
-
   }
 
   .navbar-brand {
@@ -299,16 +282,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     line-height: normal;
     padding-top: 0;
   }
-  #fixedpop{
-  background-color : #31B0D5;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  border-color: #46b8da;
-  position: fixed;
-  bottom: -4px;
-  right: 10px;
-}
+
   .nav-item .nav-link {
     display: block;
     color: var(--white-color);
@@ -362,13 +336,12 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   .navbar-toggler .navbar-toggler-icon {
-    background: var(--white-color);
+    background: var(--primary-color);
     transition: background 10ms 300ms ease;
     display: block;
     width: 30px;
     height: 2px;
     position: relative;
-    
   }
 
   .navbar-toggler .navbar-toggler-icon::before,
@@ -379,7 +352,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     position: absolute;
     right: 0;
     left: 0;
-    background: var(--white-color);
+    background: var(--primary-color);
     width: 30px;
     height: 2px;
     content: '';
@@ -392,7 +365,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
   .navbar-toggler .navbar-toggler-icon::after {
     top: 8px;
   }
-
+  #navbarNav{
+    background-color: black;
+  }
   /*---------------------------------------
      HERO              
   -----------------------------------------*/
@@ -660,29 +635,32 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   @media screen and (max-width: 992px) {
 
-    .section {
-      padding: 5rem 0;
-    }
+    @media screen and (max-width: 992px) {
 
-    .nav-item .nav-link {
-      padding: 6px;
-    }
-
-    .navbar .social-icon {
-      margin-top: 22px;
-    }
-
-    .navbar-collapse,
-    .site-footer {
-      text-align: center;
-    }
-
-    .schedule-table {
-      display: block;
-    }
-
-    .modal-content {
-      padding: 2rem;
+      .section {
+        padding: 5rem 0;
+      }
+  
+      .nav-item .nav-link {
+        padding: 6px;
+      }
+  
+      .navbar .social-icon {
+        margin-top: 22px;
+      }
+  
+      .navbar-collapse,
+      .site-footer {
+        text-align: center;
+      }
+  
+      .schedule-table {
+        display: block;
+      }
+  
+      .modal-content {
+        padding: 2rem;
+      }
     }
   }
 
@@ -860,7 +838,6 @@ button{
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
 .wrapper {
   animation: scroll 70s linear infinite;
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
@@ -900,5 +877,14 @@ button{
   color: #eee;
   perspective: 1000px;
   perspective-origin: 50% 50%;
-   
 }
+
+.fadeout{  visibility: hidden;
+  opacity: 0;
+
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+  
