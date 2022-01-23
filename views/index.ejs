@@ -169,7 +169,7 @@
                                 <div class="col-lg-8 col-md-10 mx-auto col-12">
                                 <div class="hero-text mt-5 text-center" >
                                     <a   class="btn custom-btn bordered mt-3" onclick="prev3(this.id)" style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
-                                    <a   class="btn custom-btn bordered mt-3" onclick="dynamic3(this.id)" style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
+                                    <a   class="btn custom-btn bordered mt-3" onclick="dynamic2(this.id)" style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Next Step</a> 
 
                                     <!-- <a onclick="dynamic1(this.id)" id="next1" style="font-size: 3vh;" data-aos="fade-up" data-aos-delay="700">Get Prize</a>  -->
                                 </div>
@@ -197,7 +197,7 @@
                                     <div class="col-lg-8 col-md-10 mx-auto col-12">
                                     <div class="hero-text mt-5 text-center">
                                         <a  onclick="prev4(this.id)" class="btn custom-btn bordered mt-3" id="s2prev"  style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
-                                        <a  onclick="dynamic2(this.id)"  class="btn custom-btn bordered mt-3 fa fa-whatsapp " style="color: #ffffff;" style="color: #09a509; " id="next1" data-aos="fade-up" data-aos-delay="700">     Send</a> 
+                                        <a  onclick="gotowhatsapp(this.id)"  class="btn custom-btn bordered mt-3 fa fa-whatsapp " style="color: #ffffff;" style="color: #09a509; " id="next1" data-aos="fade-up" data-aos-delay="700">     Send</a> 
                                     </div>
                                 </div>
                         </div>
@@ -366,7 +366,7 @@
             function tttoggle(a){
                 console.log(a)
                         var button = document.getElementById(a)
-                        s2 = a-10
+                        s2 = a
             
                         var activee = document.getElementsByClassName('ui toggle button a active ')
                         var active = document.getElementsByClassName('ui toggle button a active').length
@@ -480,7 +480,7 @@ const step5 = document.getElementById('step5')
                         var answer = document.getElementById(s2)
                             answers3 = answer.textContent
                             console.log(answers3)
-                        var stage2 = test[dress][s2]
+                        var stage2 = test[dress][s2-10]
                         var container = document.getElementById('more2');
 
                         container.innerHTML = ""
@@ -509,7 +509,6 @@ const step5 = document.getElementById('step5')
                         var answer = document.getElementById(s3)
                         answers4 = answer.textContent
                         console.log(answers4)
-                        gotowhatsapp()
                     }else{
 
                         gotowhatsapp()
