@@ -26,6 +26,31 @@ app.get('/', (req, res) => {
         })
     })
 })
+app.get('/sizechart', (req, res) => {        
+    res.render('sizechart')
+})
+app.get('/price', (req, res) => {        
+    res.render('pricelist')
+})
+
+app.get('/designs', (req, res) => {
+    Movie.find({}, function(err, movies) {
+        console.log(err)
+        console.log(movies)
+        res.render('designs', {
+            moviesList: movies
+        })
+    })
+})
+app.get('/effects', (req, res) => {
+    Movie.find({}, function(err, movies) {
+        console.log(err)
+        console.log(movies)
+        res.render('effects', {
+            moviesList: movies
+        })
+    })
+})
 
 app.listen(port, function() {
     console.log('server is running');
