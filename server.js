@@ -51,6 +51,15 @@ app.get('/effects', (req, res) => {
         })
     })
 })
+app.get('/previous', (req, res) => {
+    Movie.find({}, function(err, movies) {
+        console.log(err)
+        console.log(movies)
+        res.render('previous', {
+            moviesList: movies
+        })
+    })
+})
 
 app.listen(port, function() {
     console.log('server is running');
