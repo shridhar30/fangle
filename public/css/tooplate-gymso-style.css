@@ -273,6 +273,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+    background-color: black;
   }
 
   .navbar-brand {
@@ -365,9 +366,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   .navbar-toggler .navbar-toggler-icon::after {
     top: 8px;
   }
-  #navbarNav{
-    background-color: black;
-  }
+
   /*---------------------------------------
      HERO              
   -----------------------------------------*/
@@ -612,6 +611,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   .social-icon li {
     display: inline-block;
     list-style: none;
+    background-color: black;
   }
 
   .social-icon li a {
