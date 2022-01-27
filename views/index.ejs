@@ -33,11 +33,22 @@
   border-radius: 50%;
   display: inline-block;
 }
+.carousel{
+          height: 200px;
+          width: 200px;
+          margin: 0 auto;
+        }
+        img{
+          max-height: 100%;
+          max-width: 100%;
+          display: block;
+        }
     </style>
 <body class="stop-scrolling" data-spy="scroll" data-target="#navbarNav" data-offset="50" style="font-family: 'Playfair Display', serif;">
     <!-- MENU BAR -->
     <div class="refresh">
-        <a href="javascript:location.reload(true)">
+        <a href="#step6" >
+        <!-- <a href="javascript:location.reload(true)" > -->
             <span class="dot">
                 <img src="./img/upload.png" style="padding-bottom: 6px; padding-left: 4px;" alt="">
                    </span>
@@ -274,15 +285,15 @@
                 </div>
 
             </section> -->
-            <section class="class section px-5 fadeout " id="step6">
-                <div  class="container  shadow-lg py-2 mb-5 hi rounded  ">
-                                <div class="row text-center py-5 " >
-                                    <div class="col-lg-12 py-3 ">
+            <section class="class section px-3  " id="step6">
+                <div  class="container  shadow-lg py-2 mb-1 hi rounded  ">
+                                <div class="row text-center py-4 " >
+                                    <div class="col-lg-12 py-4 ">
                                         <h1 data-aos="fade-up" data-aos-delay="200" style="font-family: 'Playfair Display', serif; word-spacing:1rem;" >Required  Apparel Effect</h1>
                                     </div>
                                     <div class='col-lg-12 align-items-center' id="012"  data-aos="fade-up" data-aos-delay="400">
 
-       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+       <div id="carouselExampleControls" class="carousel slide"  data-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
                 <a href="https://ibb.co/ggTF4wt"><img class="img-thumbnail" src="https://i.ibb.co/mzqFNth/IMG-20220125-161426-ccexpress.jpg" alt="IMG-20220125-161426-ccexpress" border="0"></a>
@@ -291,7 +302,6 @@
               <div class="carousel-item ">
                   <a href="https://ibb.co/StKjVLm"><img class="img-thumbnail" src="https://i.ibb.co/GWV6ChM/IMG-20220125-161121-ccexpress.jpg" alt="IMG-20220125-161121-ccexpress" border="0"></a>
                   <button class="ui toggle button y m-2" id="SMOCKED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">SMOCKED</button>
-                  
                 </div>
                 
           <div class="carousel-item">
@@ -299,13 +309,14 @@
               <button class="ui toggle button y m-2" id="RUCHED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">RUCHED</button>
               
             </div>
-        <div class="carousel-item">
-            <a href="https://ibb.co/QYfcVXy"><img class="img-thumbnail" src="https://i.ibb.co/tY4h63V/IMG-20220125-161207-ccexpress.jpg" alt="IMG-20220125-161207-ccexpress" border="0"></a><br />
-            <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button>
+            <div class="carousel-item">
+                <a href="https://ibb.co/QYfcVXy"><img class="img-thumbnail" src="https://i.ibb.co/tY4h63V/IMG-20220125-161207-ccexpress.jpg" alt="IMG-20220125-161207-ccexpress" border="0"></a><br />
+                <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button>
+            <!-- <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button> -->
         </div>
         <div class="carousel-item">
             <a href="https://ibb.co/PT9N4WM"><img class="img-thumbnail" src="https://i.ibb.co/bH2PLvF/Whats-App-Image-2022-01-25-at-5-43-04-AM-ccexpress.jpg" alt="Whats-App-Image-2022-01-25-at-5-43-04-AM-ccexpress" border="0"></a>
-                        <button class="ui toggle button y m-2" id="WRAP" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">WRAP</button>
+            <button class="ui toggle button y m-2" id="WRAP" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">WRAP</button>
         </div>
         <div class="carousel-item">
             <a href="https://ibb.co/cLYsbkT"><img class="img-thumbnail" src="https://i.ibb.co/Hdh9NBg/IMG-20220125-161250-ccexpress.jpg" alt="IMG-20220125-161250-ccexpress" border="0"></a>
@@ -361,8 +372,8 @@
       </div>                                -->
     </div>
                                      <div class="col-lg-8 col-md-10 mx-auto col-12">
-                                        <div class="hero-text mt-5 text-center">
-                                          <a    class="btn custom-btn bordered btn-lg fa fa-whatsapp "  style="color: #09a509; "  id="next" onclick="last(this.id)" data-aos="fade-up" data-aos-delay="700">For Price</a> 
+                                        <div class="hero-text mt-5 text-center p-3">
+                                          <a    class="btn custom-btn bordered btn-lg fa fa-whatsapp "  style="color: #09a509; "  id="next" onclick="last(this.id)" >For Price</a> 
                                         </div>
                                    </div>
                             </div>
@@ -491,9 +502,10 @@
            
             function gotowhatsapp() {
                 var url = "https://wa.me/919442829974?text=" 
-                // "Hey FANGLE , I would like to upcycle my "+ answers1 +','+ answers2 +" into "+ answers3  +","+ answers4  +","+ answers5 +","+ answers6 +","+ answers7 +" . I want to know the price estimation and guide of designer for exact outcome of my apparel! Thank you❤️"
-                + "Hey FANGLE , I would like to upcycle my " + answers1 + +", size-" + answers2 +
-                + ",into a " + answers3 + "%0a"  + answers4  +  + "to size-"  + answers5  + "%0a" + "with"  + + answers7 + + "effect . I want to know the price estimation and guide of designer for exact outcome of my apparel! Thank you❤️";
+                + "Hey FANGLE , I would like to upcycle my  " + answers1 + " size -"+ answers2 + "%0a"
+                + ",into a " + answers3 +" , " + answers4 + " size- " +answers5 + " with " + answers7 + " effect . I want to know the price estimation and guide of designer for exact outcome of my apparel! Thank you❤️" ; 
+                // +"Hey FANGLE , I would like to upcycle my " + answers1 + ", size-" + answers2 +
+                // ",into a " + answers3 + "%0a"  + answers4  +   "to size-"  + answers5  + "%0a" + "with"   + answers7 +  "effect . I want to know the price estimation and guide of designer for exact outcome of my apparel! Thank you❤️";
  
                 window.open(url, '_blank').focus();
             }
