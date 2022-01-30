@@ -32,6 +32,9 @@ app.get('/sizechart', (req, res) => {
 app.get('/price', (req, res) => {        
     res.render('pricelist')
 })
+app.get('/about', (req, res) => {        
+    res.render('about')
+})
 
 app.get('/designs', (req, res) => {
     Movie.find({}, function(err, movies) {
