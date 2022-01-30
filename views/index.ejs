@@ -310,10 +310,13 @@
               <button class="ui toggle button y m-2" id="RUCHED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">RUCHED</button>
               
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <a href="https://ibb.co/QYfcVXy"><img class="img-thumbnail" src="https://i.ibb.co/tY4h63V/IMG-20220125-161207-ccexpress.jpg" alt="IMG-20220125-161207-ccexpress" border="0"></a><br />
                 <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button>
-            <!-- <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button> -->
+        </div> -->
+        <div class="carousel-item">
+            <a href="https://ibb.co/QYfcVXy"><img class="img-thumbnail" src="https://i.ibb.co/tY4h63V/IMG-20220125-161207-ccexpress.jpg" alt="Whats-App-Image-2022-01-25-at-5-43-04-AM-ccexpress" border="0"></a>
+            <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button>
         </div>
         <div class="carousel-item">
             <a href="https://ibb.co/PT9N4WM"><img class="img-thumbnail" src="https://i.ibb.co/bH2PLvF/Whats-App-Image-2022-01-25-at-5-43-04-AM-ccexpress.jpg" alt="Whats-App-Image-2022-01-25-at-5-43-04-AM-ccexpress" border="0"></a>
@@ -388,7 +391,7 @@
                     <div class="hero-text mt-5 text-center ">
                     <a    class="btn custom-btn bordered btn-lg fa fa-whatsapp "  style="color: #fafafa; "  id="next" onclick="last(this.id)" >For Price</a> 
                     </div>
-                    <h6 style="font-size: 0.9rem; line-height: 0.8rem; font-weight: 600; text-transform: lowercase; color: black;" class="p-2">NOTE: EVERYTHING STATED ABOVE IS A ROUGH ESTIMATION OF OUTCOMES BASED ON ASSUMPTION. THE MAIN PURPOSE IS TO REACH MORE IDEAS TO THE CUSTOMERS. AFTER COMPLETING THE FINAL STEP OF VIRTUAL UPCYCLING PROCESS CUSTOMER WILL BE DIRECTED TOWARDS THE UPCYCLING ARTIST WHERE ILLUSTRATION OF OUTOME WILL BE GIVEN TO CUTOMER .</h6>
+                    <h6 style="font-size: 0.9rem; line-height: 0.9rem; font-weight: 600; text-transform: lowercase; color: black;" class="p-2">NOTE: EVERYTHING STATED ABOVE IS A ROUGH ESTIMATION OF OUTCOMES for the PURPOSE of REACHing MORE IDEAS TO THE CUSTOMERS. after FINAL STEP OF VIRTUAL UPCYCLING PROCESS CUSTOMER WILL BE DIRECTED TOWARDS THE UPCYCLING ARTIST </h6>
                 </div>
         </div>
     </div>
@@ -503,7 +506,7 @@
             var s2 = 's'
             var s3 = 's'
             var s4 = 's'
-            var s6 = 's'
+            var s6 = []
 
             // answers
             var answers1 = 'a'
@@ -512,7 +515,7 @@
             var answers4 = 'only'
             var answers5 = 'a' 
             var answers6 = 'a' 
-            var answers7 = 'a' 
+            var answers7 = []
            
             function gotowhatsapp() {
                 var url = "https://wa.me/919442829974?text=" 
@@ -592,17 +595,18 @@
             function tooggle(a){
                 console.log(a)
                         var button = document.getElementById(a)
-                        s6 = button.textContent
-                        console.log(s6)
-                        var activee = document.getElementsByClassName('ui toggle button y active ')
-                        var active = document.getElementsByClassName('ui toggle button y active').length
-                        console.log(activee)
-                        if (active != 0) {
-                            activee[0].classList.toggle('active')
-                        } else {
-                            button.classList.toggle('active')   
+                        var listitem = button.textContent
+                        answers7.push(listitem)
+                        button.classList.toggle('active')  
+                        // var activee = document.getElementsByClassName('ui toggle button y active ')
+                        // var active = document.getElementsByClassName('ui toggle button y active').length
+                        // console.log(activee)
+                        // if (active != 0) {
+                        //     activee[0].classList.toggle('active')
+                        // } else {
+                        //     button.classList.toggle('active')   
                      
-                        }
+                        // }
                     }
 const step1 = document.getElementById('step1')
 const step2 = document.getElementById('step2')
@@ -636,16 +640,9 @@ const step6 = document.getElementById('step6')
                         var parent = document.getElementById('012')
                         var votedchild = parent.getElementsByClassName("ui toggle button active").length
                         var voted = parent.getElementsByClassName("ui toggle button active")
-                            if (votedchild == 1){
-                                answers7 = s6
-                                console.log(answers7)
-                                gotowhatsapp()
-                            }else{
-                                document.getElementById('step6').scrollIntoView({
-                                    behavior:"smooth"
-                                });
-                            }
-                            console.log(answers7)
+                        console.log(answers7)
+                        gotowhatsapp()
+
                         }
             function next(a){
                 console.log(a)
