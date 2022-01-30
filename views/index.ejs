@@ -219,7 +219,11 @@
                                 <div class='col-lg-12 align-items-center' id="more2"  data-aos="fade-up" data-aos-delay="400">
                                     <p style="font-size: 1.5rem; color: black;">We can make only one dress out of your apparel</p>
                                 </div>
-
+                                <div class="col-lg-12 py-3 fadeout" id="h1">
+                                    <h1 data-aos="fade-up" data-aos-delay="200" style="font-family: 'Playfair Display', serif; word-spacing:1rem;" >AND</h1>
+                                </div>
+                                
+                                <div class="saree col-lg-12 align-items-center fadeout" id="saree" data-aos="fade-up" data-aos-delay="400"></div>
                                 <div class="col-lg-8 col-md-10 mx-auto col-12">
                                 <div class="hero-text mt-5 text-center" >
                                     <a   class="btn custom-btn bordered mt-3" onclick="prev3(this.id)" style="color: #ffffff;" data-aos="fade-up" data-aos-delay="700">Previous step</a> 
@@ -232,6 +236,7 @@
                                 
                         </div>
             </section>
+
         <section class="class section px-5 fadeout " id="step5">
             <div  class="container    py-2 mb-5 hi rounded  ">
                             <div class="row text-center py-5 " >
@@ -315,7 +320,7 @@
                 <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button>
         </div> -->
         <div class="carousel-item">
-            <a href="https://ibb.co/QYfcVXy"><img class="img-thumbnail" src="https://i.ibb.co/tY4h63V/IMG-20220125-161207-ccexpress.jpg" alt="Whats-App-Image-2022-01-25-at-5-43-04-AM-ccexpress" border="0"></a>
+            <img class="img-thumbnail" src="https://i.ibb.co/tY4h63V/IMG-20220125-161207-ccexpress.jpg" alt="Whats-App-Image-2022-01-25-at-5-43-04-AM-ccexpress" border="0">
             <button class="ui toggle button y m-2" id="FLARED" onclick="tooggle(this.id)"style="font-family: 'Playfair Display', serif;">FLARED</button>
         </div>
         <div class="carousel-item">
@@ -363,9 +368,7 @@
           max-width: 100%;
           display: block;
         }
-        img:hover{
-            transform: scale(1.5);
-        }
+
       </style>
       <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -394,7 +397,7 @@
                     <div class="hero-text mt-5 text-center ">
                     <a    class="btn custom-btn bordered btn-lg fa fa-whatsapp "  style="color: #fafafa; "  id="next" onclick="last(this.id)" >For Price</a> 
                     </div>
-                    <h6 style="font-size: 0.9rem; line-height: 0.9rem; font-weight: 600; text-transform: lowercase; color: black;" class="p-3">NOTE: EVERYTHING STATED ABOVE IS A ROUGH ESTIMATION OF OUTCOMES for the PURPOSE of REACHing MORE IDEAS TO THE CUSTOMERS. after FINAL STEP OF VIRTUAL UPCYCLING PROCESS CUSTOMER WILL BE DIRECTED TOWARDS THE UPCYCLING ARTIST </h6>
+                    <h6 style="font-size: 0.9rem; line-height: 0.9rem; font-weight: 600;  color: black;" class="p-3">Note: Everything stated above is a rough estimation of outcomes for the purpose of reaching more ideas to customers. After final step of virtual upcycling process you will be directed to the UPCYCLING ARTIST </h6>
                 </div>
         </div>
     </div>
@@ -510,6 +513,7 @@
             var s3 = 's'
             var s4 = 's'
             var s6 = []
+            var s7 = 'a'
 
             // answers
             var answers1 = 'a'
@@ -518,12 +522,13 @@
             var answers4 = 'only'
             var answers5 = 'a' 
             var answers6 = 'a' 
+            var answers8 = ' ' 
             var answers7 = []
            
             function gotowhatsapp() {
                 var url = "https://wa.me/919442829974?text=" 
                 + "Hey FANGLE , I would like to upcycle my  " + answers1 + " size -"+ answers2 + "%0a"
-                + "into a " + answers3 +" , " + answers4 + " size- " +answers5 + " with " + answers7 + " effect . I want to know the price estimation and guide of designer for exact outcome of my apparel!" +"%0a" + " Thank you❤️" ; 
+                + "into a " + answers3 +" , " + answers4 +" , " + answers8 + " of size- " +answers5 + " with " + answers7 + " effect . I want to know the price estimation and guide of designer for exact outcome of my apparel!" +"%0a" + " Thank you❤️" ; 
                 // +"Hey FANGLE , I would like to upcycle my " + answers1 + ", size-" + answers2 +
                 // ",into a " + answers3 + "%0a"  + answers4  +   "to size-"  + answers5  + "%0a" + "with"   + answers7 +  "effect . I want to know the price estimation and guide of designer for exact outcome of my apparel! Thank you❤️";
  
@@ -571,6 +576,21 @@
             
                         var activee = document.getElementsByClassName('ui toggle button a active ')
                         var active = document.getElementsByClassName('ui toggle button a active').length
+                        console.log(activee)
+                        if (active != 0) {
+                            activee[0].classList.toggle('active')
+                        } else {
+                            button.classList.toggle('active')   
+                     
+                        }
+                    }
+            function toooggle(a){
+                console.log(a)
+                        var button = document.getElementById(a)
+                        s7 = button.textContent
+                        console.log(s7)
+                        var activee = document.getElementsByClassName('ui toggle button 3 active ')
+                        var active = document.getElementsByClassName('ui toggle button 3 active').length
                         console.log(activee)
                         if (active != 0) {
                             activee[0].classList.toggle('active')
@@ -660,7 +680,8 @@ const step6 = document.getElementById('step6')
                                 });
                                 step2.classList.toggle('fadeout')
                                 step1.classList.toggle('fadeout')
-                            }else{
+                            }
+                            else{
                                 document.getElementById('step1').scrollIntoView({
                                     behavior:"smooth"
                                 });
@@ -671,19 +692,20 @@ const step6 = document.getElementById('step6')
                         var answer = document.getElementById(dress)
                             answers1 = answer.textContent
                             console.log(answers1)
-                        var stage1 = test[dress].stage1
-                        var container = document.getElementById('s1');
-                        container.innerHTML = ""
-                for (var i = 0; i < stage1.length; i++) {
-                    var button = document.createElement('button');
-                        button.type = 'button';
-                        button.id = 10 + i;
-                        button.setAttribute("onclick", "tttoggle(this.id)");
-                        button.innerHTML = stage1[i];
-                        button.className = 'column ui toggle button m-2 a';
-                        container.appendChild(button);
-                    }
-                    }
+                            var stage1 = test[dress].stage1
+                            var container = document.getElementById('s1');
+                            container.innerHTML = ""
+                            for (var i = 0; i < stage1.length; i++) {
+                                var button = document.createElement('button');
+                                button.type = 'button';
+                                button.id = 10 + i;
+                                button.setAttribute("onclick", "tttoggle(this.id)");
+                                button.innerHTML = stage1[i];
+                                button.className = 'column ui toggle button m-2 a';
+                                container.appendChild(button);
+                            }
+ 
+                        }
             function dynamic1(a){
                         var parent = document.getElementById('s1')
                         var votedchild = parent.getElementsByClassName("ui toggle button active").length
@@ -731,6 +753,27 @@ const step6 = document.getElementById('step6')
                         container.appendChild(button);  
                     }
                     }
+
+                    if (s2 > 13 ) {
+                                var container = document.getElementById('saree');
+                                var h1 = document.getElementById('h1');
+                                container.classList.toggle('fadeout')
+                                h1.classList.toggle('fadeout')
+                                var stage3 = test[dress].stage3
+                                console.log(stage3)
+                                for (var i = 0; i < stage3.length; i++) {
+                                var button = document.createElement('button');
+                                button.type = 'button';
+                                button.id = 100 + i;
+                                button.setAttribute("onclick", "toooggle(this.id)");
+                                button.innerHTML = stage3[i];
+                                button.className = 'column ui toggle button m-2 3';
+                                container.appendChild(button);
+                            }
+                            if (s2 == 21) {
+                                var button = document.getElementById('100').classList.toggle('fadeout')
+                            }
+                            }
                     // stage2.length == 1
                 }
             function dynamic2(a){
@@ -739,7 +782,9 @@ const step6 = document.getElementById('step6')
                     if (votedchild == 1){
                         var answer = document.getElementById(s3)
                         answers4 = answer.textContent
+                        answers8 = s7
                         console.log(answers4)
+                        console.log(answers8 )
                         document.getElementById('step5').scrollIntoView({
                                     behavior:"smooth"
                                 });
